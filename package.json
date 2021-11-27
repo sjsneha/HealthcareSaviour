@@ -7,7 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "nodemon": "nodemon app.js",
     "peerjs": "peerjs --port 3001",
-    "all": "npm-run-all --parallel nodemon peerjs"
+    "all": "npm-run-all --parallel nodemon peerjs",
+    "start":"npm-run-all --parallel nodemon peerjs"
   },
   "repository": {
     "type": "git",
