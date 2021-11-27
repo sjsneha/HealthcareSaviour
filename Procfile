@@ -1,1 +1,1 @@
-web:nmp run all
+web:npm run all
