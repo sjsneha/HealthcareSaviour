@@ -1,1 +1,1 @@
-web:nmp start
+web:nmp run all
