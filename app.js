@@ -100,6 +100,6 @@ io.on("connection", (socket) => {
 });
 
 //Listen on port 3000
-server.listen(process.env.PORT, function () {
+server.listen(process.env, function () {
   console.log("server is connected!!");
 });
