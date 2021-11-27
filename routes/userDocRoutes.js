@@ -115,7 +115,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
         { _id: 1 },
         function (err, foundDocId) {
           if (err) {
-            console.log(err);
+            console.log(err.message);
             req.flash("error", "No Patient Found");
             res.redirect("/userDocSection/docDashboard");
           } else {
@@ -124,7 +124,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
               appointedDoctorId: foundDocId[0]._id,
             }).exec(function (err, foundPatientMedicalRecords) {
               if (err) {
-                console.log(err);
+                console.log(err.message);
               } else {
                 Appointment.findOne(
                   {
@@ -134,7 +134,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
                   },
                   function (err, foundAppointment) {
                     if (err) {
-                      console.log(err);
+                      console.log(err.message);
                     } else {
                       res.render("userDocSection/docfiles/patientInfo", {
                         foundDocId: foundDocId,
