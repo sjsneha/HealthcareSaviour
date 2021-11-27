@@ -115,7 +115,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
         { _id: 1 },
         function (err, foundDocId) {
           if (err) {
-            console.log(err.message);
+            console.log();
             req.flash("error", "No Patient Found");
             res.redirect("/userDocSection/docDashboard");
           } else {
@@ -136,7 +136,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
                     if (err) {
                       console.log(err.message);
                     } else {
-                      res.render("/userDocSection/docfiles/patientinfo", {
+                      res.render("userDocSection/docfiles/patientinfo", {
                         foundDocId: foundDocId,
                         foundPatient: foundPatient,
                         foundPatientMedicalRecords: foundPatientMedicalRecords,
