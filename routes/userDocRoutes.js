@@ -136,7 +136,7 @@ router.get("/userDocSection/patientList/patientInfo/:id", middleware.isLoggedIn,
                     if (err) {
                       console.log(err.message);
                     } else {
-                      res.render("/userDocSection/docfiles/patientInfo", {
+                      res.render("/userDocSection/docfiles/patientinfo", {
                         foundDocId: foundDocId,
                         foundPatient: foundPatient,
                         foundPatientMedicalRecords: foundPatientMedicalRecords,
