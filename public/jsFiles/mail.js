@@ -11,7 +11,7 @@ var transporter = nodemailer.createTransport({
 
 const sendMail = (text, receiver, cb) => {
   const mailOptions = {
-    sender: "medbuddyHack2021@gmail.com",
+    sender: "healthcaresaviour1@gmail.com",
     from: "Healthcare Saviour",
     to: receiver,
     subject: "Appointment Started",
@@ -33,7 +33,7 @@ const sendMail = (text, receiver, cb) => {
 };
 const sendReceiptMail = (receiver, fileName, encodedString, cb) => {
   const mailOptions = {
-    sender: "medbuddyHack2021@gmail.com",
+    sender: "healthcaresaviour1@gmail.com",
     from: "Healthcare Saviour",
     to: receiver,
     subject: "Appointment Receipt",
@@ -57,7 +57,7 @@ const sendReceiptMail = (receiver, fileName, encodedString, cb) => {
 };
 const sendPrescriptionMail = (receiver, fileName, encodedString, cb) => {
   const mailOptions = {
-    sender: "medbuddyHack2021@gmail.com",
+    sender: "healthcaresaviour1@gmail.com",
     from: "Healthcare Saviour",
     to: receiver,
     subject: "Appointment Prescription",
@@ -81,7 +81,7 @@ const sendPrescriptionMail = (receiver, fileName, encodedString, cb) => {
 };
 const sendContactUsMail = (message, cb) => {
   const mailOptions = {
-    sender: "medbuddyHack2021@gmail.com",
+    sender: "healthcaresaviour1@gmail.com",
     from: "Healthcare Saviour",
     to: "ultimateraze011@gmail.com",
     subject: "Help Needed!",
