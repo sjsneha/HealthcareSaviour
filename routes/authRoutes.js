@@ -30,7 +30,10 @@ router.post(
     } else if (req.user.role == "hospAdmin") {
       req.flash("success", "Welcome to Healthcare Saviour! " + req.user.username);
       res.redirect("/user/hospAdmin/dashboard");
-    } else res.send(404);
+    } else {
+      req.flash("failed", "Invalid credentials");
+      res.send(404);
+    }
   }
 );
 
