@@ -539,7 +539,7 @@ router.put(
     //------------X-------------Hospital Update Routes ---------X-----------//
     //--------------------------Other Profiles Update Routes ---------------------//
 
-    router.get(
+    router.put(
       "/dashboards/hospAdmin/updateOtherProfile",
       middleware.isLoggedIn,
       function (req, res) {

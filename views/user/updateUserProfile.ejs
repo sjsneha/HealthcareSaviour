@@ -6,7 +6,7 @@
 <body>
     <%- include("../partials/altNavbar"); -%>
     <%- include("../partials/altSidebar"); -%>
-    <%- include("./partials/altAdminSideNavBar"); -%>
+    <%- include("../partials/altAdminSideNavBar"); -%>
     <div class=" container signup-wrapper">
         <form action="/user/updateProfile/<%=currentUser._id%>?_method=PUT" method="POST">
             <h2 style="text-align: center;">Update Details</h2>
