@@ -13,7 +13,7 @@ router.post("/userHospSection/bloodBanks/search", function(req, res){
             if(err){
                 console.log(err);
             } else{
-                res.render("userHospSection/BloodBanks/index", {foundBloodBanks: foundBloodBanks, flag:1})
+                res.render("userHospSection/bloodBanks/index", {foundBloodBanks: foundBloodBanks, flag:1})
             }
         });
     } else if(state && !city){
@@ -21,7 +21,7 @@ router.post("/userHospSection/bloodBanks/search", function(req, res){
             if(err){
                 console.log(err);
             } else{
-                res.render("userHospSection/BloodBanks/index", {foundBloodBanks: foundBloodBanks, flag:1});
+                res.render("userHospSection/bloodBanks/index", {foundBloodBanks: foundBloodBanks, flag:1});
             }
         });
     }

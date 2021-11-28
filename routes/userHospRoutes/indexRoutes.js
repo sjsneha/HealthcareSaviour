@@ -10,7 +10,7 @@ router.get("/userHospSection/initialPage", middleware.isLoggedIn, function (req,
 });
 
 router.get("/userHospSection/bloodBanks", middleware.isLoggedIn, function(req, res){
-  res.render("userHospSection/BloodBanks/index", {flag: 0})
+  res.render("userHospSection/bloodBanks/index", {flag: 0})
 });
 
 router.get("/userHospSection/organDonation", middleware.isLoggedIn, function(req, res){
